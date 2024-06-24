@@ -2,39 +2,45 @@ import 'package:flutter/material.dart';
 
 abstract class FontsAppStyles {
   static const TextStyle styleRegular16 = TextStyle(
-      color: Color(0xff064060),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400);
+    color: Color(0xff064060),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w400,
+  );
 
   static const TextStyle styleMedium16 = TextStyle(
-      color: Color(0xff064060),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w500);
+    color: Color(0xff064060),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
+  );
 
   static const TextStyle styleSemiBold16 = TextStyle(
-      color: Color(0xff064060),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600);
+    color: Color(0xff064060),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+  );
   static const TextStyle styleSemiBold20 = TextStyle(
-      color: Color(0xff064060),
-      fontSize: 20,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600);
+    color: Color(0xff064060),
+    fontSize: 20,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+  );
 
   static const TextStyle styleRegular12 = TextStyle(
-      color: Color(0xffAAAAAA),
-      fontSize: 12,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400);
+    color: Color(0xffAAAAAA),
+    fontSize: 12,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w400,
+  );
 
   static const TextStyle styleSemiBold24 = TextStyle(
-      color: Color(0xff4EB7F2),
-      fontSize: 24,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600);
+    color: Color(0xff4EB7F2),
+    fontSize: 24,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+  );
 
   static const TextStyle styleRegular14 = TextStyle(
       color: Color(0xffAAAAAA),
@@ -43,8 +49,9 @@ abstract class FontsAppStyles {
       fontWeight: FontWeight.w400);
 
   static const TextStyle styleSemiBold18 = TextStyle(
-      color: Color(0xffFFFFFF),
-      fontSize: 20,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600);
+    color: Color(0xffFFFFFF),
+    fontSize: 20,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+  );
 }
