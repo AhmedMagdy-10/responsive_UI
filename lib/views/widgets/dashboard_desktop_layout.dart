@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_app/views/widgets/all_expenses.dart';
 import 'package:responsive_app/views/widgets/custom_drawer.dart';
 
 class DashBoardDestopLayout extends StatelessWidget {
@@ -8,7 +9,16 @@ class DashBoardDestopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        Expanded(child: CustomDrawer()),
+        Expanded(
+          child: CustomDrawer(),
+        ),
+        SizedBox(
+          width: 32,
+        ),
+        Expanded(
+          flex: 2,
+          child: AllExpenses(),
+        )
       ],
     );
   }
