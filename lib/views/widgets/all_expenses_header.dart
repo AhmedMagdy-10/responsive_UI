@@ -11,7 +11,8 @@ class AllExpensesHeader extends StatelessWidget {
       children: [
         Text(
           headerTitle,
-          style: FontsAppStyles.styleSemiBold20.copyWith(color: Colors.black),
+          style: FontsAppStyles.styleSemiBold20(context)
+              .copyWith(color: Colors.black),
         ),
         Container(
           padding: const EdgeInsets.all(12),
@@ -27,9 +28,9 @@ class AllExpensesHeader extends StatelessWidget {
           ),
           child: Row(
             children: [
-              const Text(
+              Text(
                 'monthly',
-                style: FontsAppStyles.styleMedium16,
+                style: FontsAppStyles.styleMedium16(context),
               ),
               const SizedBox(
                 width: 18,

@@ -16,7 +16,8 @@ class MyCardSeaction extends StatelessWidget {
           width: 420,
           child: Text(
             'My Card',
-            style: FontsAppStyles.styleSemiBold20.copyWith(color: Colors.black),
+            style: FontsAppStyles.styleSemiBold20(context)
+                .copyWith(color: Colors.black),
           ),
         ),
         const SizedBox(

@@ -7,21 +7,21 @@ class TransactionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TransactionHeader(),
-        SizedBox(
+        const TransactionHeader(),
+        const SizedBox(
           height: 20,
         ),
         Text(
           '13 April 2022',
-          style: FontsAppStyles.styleMedium16,
+          style: FontsAppStyles.styleMedium16(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
-        TransactionListItem(),
+        const TransactionListItem(),
       ],
     );
   }
@@ -37,15 +37,15 @@ class TransactionHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+        Text(
           'Trasaction History',
-          style: FontsAppStyles.styleSemiBold20,
+          style: FontsAppStyles.styleSemiBold20(context),
         ),
         TextButton(
           onPressed: () {},
           child: Text(
             'See all',
-            style: FontsAppStyles.styleMedium16.copyWith(
+            style: FontsAppStyles.styleMedium16(context).copyWith(
               color: const Color(0xff4EB7F2),
             ),
           ),

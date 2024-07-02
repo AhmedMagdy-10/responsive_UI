@@ -34,37 +34,47 @@ class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
-        children: items.asMap().entries.map((e) {
-      int index = e.key;
-      var items = e.value;
-      if (index == 1) {
-        return Expanded(
+      children: [
+        Expanded(
           child: GestureDetector(
             onTap: () {
               setState(() {
-                itemIndex = e.key;
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: AllExpensesItem(
-                  expensesItemModel: items, isActive: itemIndex == index),
-            ),
-          ),
-        );
-      } else {
-        return Expanded(
-          child: GestureDetector(
-            onTap: () {
-              setState(() {
-                itemIndex = e.key;
+                itemIndex = 0;
               });
             },
             child: AllExpensesItem(
-                expensesItemModel: items, isActive: itemIndex == e.key),
+                expensesItemModel: items[0], isActive: itemIndex == 0),
           ),
-        );
-      }
-    }).toList());
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                itemIndex = 1;
+              });
+            },
+            child: AllExpensesItem(
+                expensesItemModel: items[1], isActive: itemIndex == 1),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                itemIndex = 2;
+              });
+            },
+            child: AllExpensesItem(
+                expensesItemModel: items[2], isActive: itemIndex == 2),
+          ),
+        ),
+      ],
+    );
   }
 }

@@ -13,23 +13,33 @@ class AllExpensesItemData extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: FontsAppStyles.styleSemiBold16,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            title,
+            style: FontsAppStyles.styleSemiBold16(context),
+          ),
         ),
         const SizedBox(
           height: 8,
         ),
-        Text(
-          date,
-          style: FontsAppStyles.styleSemiBold16.copyWith(color: Colors.grey),
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            date,
+            style: FontsAppStyles.styleSemiBold16(context)
+                .copyWith(color: Colors.grey),
+          ),
         ),
         const SizedBox(
           height: 16,
         ),
-        Text(
-          '\$$price',
-          style: FontsAppStyles.styleSemiBold24,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            '\$$price',
+            style: FontsAppStyles.styleSemiBold24(context),
+          ),
         ),
       ],
     );

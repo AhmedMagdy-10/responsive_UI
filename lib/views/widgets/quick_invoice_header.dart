@@ -11,7 +11,8 @@ class QuickInvoiceHeader extends StatelessWidget {
       children: [
         Text(
           'Quick Invoice',
-          style: FontsAppStyles.styleSemiBold20.copyWith(color: Colors.black),
+          style: FontsAppStyles.styleSemiBold20(context)
+              .copyWith(color: Colors.black),
         ),
         Container(
           height: 48,

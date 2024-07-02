@@ -9,22 +9,25 @@ class IncomeSeaction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomContainerBackground(
+    return CustomContainerBackground(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AllExpensesHeader(headerTitle: 'Income'),
-          Expanded(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: IncomeflChart(),
+          const AllExpensesHeader(headerTitle: 'Income'),
+          Column(
+            children: [
+              const SizedBox(
+                height: 20,
+              ),
+              ConstrainedBox(
+                constraints: const BoxConstraints(
+                  maxHeight: 200,
+                  maxWidth: 200,
                 ),
-                Expanded(
-                  child: IncomeDetailsList(),
-                ),
-              ],
-            ),
+                child: const IncomeflChart(),
+              ),
+              const IncomeDetailsList(),
+            ],
           ),
         ],
       ),

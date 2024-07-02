@@ -8,10 +8,11 @@ class TitleTextfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           title,
-          style: FontsAppStyles.styleRegular16,
+          style: FontsAppStyles.styleRegular16(context),
         ),
         const SizedBox(
           height: 24,
